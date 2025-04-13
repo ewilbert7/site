@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.text-animate {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 3px solid transparent; 
+    animation: typing 1.5s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    color: #A0AEC0; /* Color of the text, adjust as needed */
+    font-size: 1.25rem; /* Match the font size of the text */
+    line-height: 2.0rem; /* Match the line height of the text */
+}
+
+@keyframes blink {
+    50% {
+      border-color: #A0AEC0; /* Caret color matching the text color */
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+section {
+  min-height: 80vh !important;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.025em;
+}
+
+a,b{
+    color: rgb(24, 230, 233);
+}

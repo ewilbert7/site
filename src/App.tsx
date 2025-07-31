@@ -125,8 +125,8 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-gray-300 text-lg">
-                  I'm a second-year <b>Computer Science student</b> at the <b><a href="https://www.st-andrews.ac.uk/">University of St Andrews. </a></b>
-                  I'm an avid learner with interests in AI, full-stack development, quantum computing and the future of technology generally.
+                  I'm a penultimate-year <b>Computer Science student</b> at the <b><a href="https://www.st-andrews.ac.uk/">University of St Andrews. </a></b>
+                   I'm an avid learner with interests in AI, full-stack development, quantum computing and the future of technology generally.
                 </p>
                 <p className="text-gray-300 text-lg">
                   Outside of university, I'm passionate about music, football, video games and community-building.
@@ -180,67 +180,141 @@ function App() {
 
         {/* Experience Section */}
         <section id="experience" className="min-h-screen flex items-center">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <h2 className="text-3xl font-bold mb-8">Technical Experience</h2>
-            <div className="space-y-12">
-            <div className="border-l-2 border-blue-500 pl-4">
-                <h3 className="text-xl font-semibold">Spring into Software Engineering Intern</h3>
-                <p className="text-blue-400">JPMorganChase • Spring 2025</p>
-                <p className="text-gray-300 mt-2">
-                Developed an AI-powered mentor recruitment platform in the Code for Good hackathon. Networked with senior engineers, participated in workshops on agile development and Git/GitHub, and gained insights into the company’s culture through team-building activities.
-                </p>
-              </div>
-              <div className="border-l-2 border-blue-500 pl-4">
-                <h3 className="text-xl font-semibold">Backend Engineer Intern</h3>
-                <p className="text-blue-400">Remita • Summer 2024</p>
-                <p className="text-gray-300 mt-2">
-                Worked in core platform development team. Engineered secure authentication APIs, built a voting app reducing result analysis time by 70%, presented projects to 100+ employees.
-                </p>
-              </div>
-              <div className="border-l-2 border-blue-500 pl-4">
-                <h3 className="text-xl font-semibold">AI Ambassador</h3>
-                <p className="text-blue-400">Inspirit AI • April 2025</p>
-                <p className="text-gray-300 mt-2">
-                Promoted ethical AI awareness through workshops and discussions, inspiring peers to explore AI’s real-world impact.
-                </p>
-              </div>
-              <div className="border-l-2 border-blue-500 pl-4">
-                <h3 className="text-xl font-semibold">Core Team Member</h3>
-                <p className="text-blue-400">St Andrews Fintech Society - AI Division • September 2024 - Present</p>
-                <p className="text-gray-300 mt-2">
-                  Learnt key concepts at the intersection of finance & AI. Working on scalable fintech projects with members.
-                </p>
-              </div>
-
-                {/* Mini Section: Additional Roles */}
-              <div className="mt-12">
-                <h3 className="text-2xl font-semibold text-white mb-4">Non-Technical Experience</h3>
-                <div className="space-y-8">
-                  <div className="border-l-2 border-purple-500 pl-4">
-                    <h4 className="text-lg font-semibold">Director</h4>
-                    <p className="text-purple-400">St Andrews Africa Summit • December 2024 - Present</p>
-                    <p className="text-gray-300 mt-2">
-                    Spearheading a team, in tandem with the Senior Director, to organise events that foster awareness and connections between St Andrews students and African culture, history, and current affairs.
-                    </p>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <h2 className="text-3xl font-bold mb-16 text-center">Technical Experience</h2>
+            
+            {/* Timeline Container */}
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-blue-500 h-full"></div>
+              
+              {/* Timeline Items */}
+              <div className="space-y-16">
+                {/* Item 1 - Right Side (Newest) */}
+                <div className="flex items-center">
+                  <div className="w-1/2 pr-8 text-right">
+                    <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                      <h3 className="text-xl font-semibold">Software Engineer Intern</h3>
+                      <p className="text-blue-400">Covenda AI • Summer 2025</p>
+                      <p className="text-gray-300 mt-2">
+                        Building ML-powered cybersecurity tools to automate threat detection and risk management.
+                      </p>
+                    </div>
                   </div>
-                  <div className="border-l-2 border-purple-500 pl-4">
-                    <h4 className="text-lg font-semibold">Vice-President</h4>
-                    <p className="text-purple-400">St Andrews African Caribbean Society • March 2025 - Present</p>
-                    <p className="text-gray-300 mt-2">
-                    Support the President in overseeing the society's activities and strategic direction. Organize events, lead initiatives promoting African and Caribbean culture, and ensure inclusivity and community engagement within the society.
-                    </p>
+                  <div className="w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900 relative z-10"></div>
+                  <div className="w-1/2 pl-8"></div>
+                </div>
+
+                {/* Item 2 - Left Side */}
+                <div className="flex items-center">
+                  <div className="w-1/2 pr-8"></div>
+                  <div className="w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900 relative z-10"></div>
+                  <div className="w-1/2 pl-8">
+                    <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                      <h3 className="text-xl font-semibold">Spring into Software Engineering Intern</h3>
+                      <p className="text-blue-400">JPMorganChase • Spring 2025</p>
+                      <p className="text-gray-300 mt-2">
+                        Developed an AI-powered mentor recruitment platform in the Code for Good hackathon. Networked with senior engineers, participated in workshops on agile development and Git/GitHub, and gained insights into the company's culture through team-building activities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Item 3 - Right Side */}
+                <div className="flex items-center">
+                  <div className="w-1/2 pr-8 text-right">
+                    <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                      <h3 className="text-xl font-semibold">AI Ambassador</h3>
+                      <p className="text-blue-400">Inspirit AI • April 2025</p>
+                      <p className="text-gray-300 mt-2">
+                        Promoted ethical AI awareness through workshops and discussions, inspiring peers to explore AI's real-world impact.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900 relative z-10"></div>
+                  <div className="w-1/2 pl-8"></div>
+                </div>
+
+                {/* Item 4 - Left Side */}
+                <div className="flex items-center">
+                  <div className="w-1/2 pr-8"></div>
+                  <div className="w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900 relative z-10"></div>
+                  <div className="w-1/2 pl-8">
+                    <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                      <h3 className="text-xl font-semibold">Backend Engineer Intern</h3>
+                      <p className="text-blue-400">Remita • Summer 2024</p>
+                      <p className="text-gray-300 mt-2">
+                        Worked in core platform development team. Engineered secure authentication APIs, built a voting app reducing result analysis time by 70%, presented projects to 100+ employees.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Item 5 - Right Side (Oldest) */}
+                <div className="flex items-center">
+                  <div className="w-1/2 pr-8 text-right">
+                    <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                      <h3 className="text-xl font-semibold">Core Team Member</h3>
+                      <p className="text-blue-400">St Andrews Fintech Society - AI Division • September 2024 - Present</p>
+                      <p className="text-gray-300 mt-2">
+                        Learnt key concepts at the intersection of finance & AI. Working on scalable fintech projects with members.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900 relative z-10"></div>
+                  <div className="w-1/2 pl-8"></div>
+                </div>
+              </div>
+            </div>
+
+            {/* Non-Technical Experience Section */}
+            <div className="mt-24">
+              <h3 className="text-2xl font-semibold text-white mb-8 text-center">Non-Technical Experience</h3>
+              <div className="relative">
+                {/* Timeline Line */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-purple-500 h-full"></div>
+                
+                {/* Timeline Items */}
+                <div className="space-y-16">
+                  {/* Item 1 - Right Side (Newest) */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8 text-right">
+                      <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <h4 className="text-lg font-semibold">Vice-President</h4>
+                        <p className="text-purple-400">St Andrews African Caribbean Society • March 2025 - Present</p>
+                        <p className="text-gray-300 mt-2">
+                          Support the President in overseeing the society's activities and strategic direction. Organize events, lead initiatives promoting African and Caribbean culture, and ensure inclusivity and community engagement within the society.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-4 h-4 bg-purple-500 rounded-full border-4 border-gray-900 relative z-10"></div>
+                    <div className="w-1/2 pl-8"></div>
+                  </div>
+
+                  {/* Item 2 - Left Side (Oldest) */}
+                  <div className="flex items-center">
+                    <div className="w-1/2 pr-8"></div>
+                    <div className="w-4 h-4 bg-purple-500 rounded-full border-4 border-gray-900 relative z-10"></div>
+                    <div className="w-1/2 pl-8">
+                      <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                        <h4 className="text-lg font-semibold">Director</h4>
+                        <p className="text-purple-400">St Andrews Africa Summit • December 2024 - Present</p>
+                        <p className="text-gray-300 mt-2">
+                          Spearheading a team, in tandem with the Senior Director, to organise events that foster awareness and connections between St Andrews students and African culture, history, and current affairs.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
         {/* Projects Section */}
         <section id="projects" className="min-h-screen flex items-center">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <h2 className="text-3xl font-bold mb-8">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* PathMatch */}
               <div className="bg-gray-800 rounded-lg p-6 group">
                 <h3 className="text-xl font-semibold">PathMatch</h3>

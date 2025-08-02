@@ -22,13 +22,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 relative">
-      
+
       {/* Navigation */}
       <nav className="fixed w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-            <img src="../res/EW.png" alt="Your Logo" className="h-8" />
+              <img src="../res/EW.png" alt="Your Logo" className="h-8" />
             </div>
 
             {/* Desktop Navigation */}
@@ -107,26 +107,26 @@ function App() {
         {/* Home Section */}
         <section id="home" className="min-h-screen flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-animate">
-           Hi, I'm Eworitse
-          </h1>
-          <div className="typing-effect">
-          <p className="text-xl sm:text-2xl text-gray-400 mb-4">
-            Computer Science Student at the University of St Andrews
-          </p>
-          </div>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-animate">
+              Hi, I'm Eworitse
+            </h1>
+            <div className="typing-effect">
+              <p className="text-xl sm:text-2xl text-gray-400 mb-4">
+                Computer Science Student at the University of St Andrews
+              </p>
+            </div>
           </div>
         </section>
 
         {/* About Section */}
         <section id="about" className="min-h-screen">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <h2 className="text-3xl font-bold mb-8 ">About Me</h2>
+            <h2 className="text-3xl font-bold mb-8 ">About Me</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-gray-300 text-lg">
                   I'm a penultimate-year <b>Computer Science student</b> at the <b><a href="https://www.st-andrews.ac.uk/">University of St Andrews. </a></b>
-                   I'm an avid learner with interests in AI, full-stack development, quantum computing and the future of technology generally.
+                  I'm an avid learner with interests in AI, full-stack development, quantum computing and the future of technology generally.
                 </p>
                 <p className="text-gray-300 text-lg">
                   Outside of university, I'm passionate about music, football, video games and community-building.
@@ -182,12 +182,12 @@ function App() {
         <section id="experience" className="min-h-screen flex items-center">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <h2 className="text-3xl font-bold mb-16 text-center">Technical Experience</h2>
-            
+
             {/* Timeline Container */}
             <div className="relative">
               {/* Timeline Line */}
               <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-blue-500 h-full"></div>
-              
+
               {/* Timeline Items */}
               <div className="space-y-16">
                 {/* Item 1 - Right Side (Newest) */}
@@ -273,7 +273,7 @@ function App() {
               <div className="relative">
                 {/* Timeline Line */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-purple-500 h-full"></div>
-                
+
                 {/* Timeline Items */}
                 <div className="space-y-16">
                   {/* Item 1 - Right Side (Newest) */}
@@ -361,23 +361,37 @@ function App() {
                   </a>
                 </div>
               </div>
+              <div className="bg-gray-800 rounded-lg p-6 group">
+                <h3 className="text-xl font-semibold">Chirply</h3>
+                <p className="text-sm text-blue-400 mb-2">Personal Project • July 2024</p>
+                <p className="text-gray-300 mb-4">
+                  Federated Twitter-inspired platform with a custom-built HTTP server written in vanilla Java. Implements RESTful APIs, JSON parsing, and cross-server federation with loop prevention.
+                </p>
+                <p className="text-sm text-gray-400 mb-4">Java, JavaScript, HTTP, JSON</p>
+                <div className="flex space-x-4">
+                  <a href="https://github.com/ewilbert7/chirply-twitter-clone" className="text-blue-400 hover:text-blue-300 flex items-center space-x-1">
+                    <Github className="w-4 h-4" />
+                    <span>Code</span>
+                  </a>
+                </div>
+              </div>
 
-          <div className="bg-gray-800 rounded-lg p-6 group">
-            <h3 className="text-xl font-semibold">Portfolio Website</h3>
-            <p className="text-sm text-blue-400 mb-2">Personal Project • April 2025</p>
-            <p className="text-gray-300 mb-4">
-              A dynamic portfolio website to showcase my skills, projects, and achievements. 
-            </p>
-            <p className="text-sm text-gray-400 mb-4">Typescript, TailwindCSS, JavaScript</p>
-            <div className="flex space-x-4">
-              <a href="https://github.com/ewilbert7/portfolio" className="text-blue-400 hover:text-blue-300 flex items-center space-x-1">
-                <Github className="w-4 h-4" />
-                <span>Code</span>
-              </a>
-            </div>
-          </div> 
-           {/* Facial Emotion Detector */}
-           <div className="bg-gray-800 rounded-lg p-6 group">
+              <div className="bg-gray-800 rounded-lg p-6 group">
+                <h3 className="text-xl font-semibold">Portfolio Website</h3>
+                <p className="text-sm text-blue-400 mb-2">Personal Project • April 2025</p>
+                <p className="text-gray-300 mb-4">
+                  A dynamic portfolio website to showcase my skills, projects, and achievements.
+                </p>
+                <p className="text-sm text-gray-400 mb-4">Typescript, TailwindCSS, JavaScript</p>
+                <div className="flex space-x-4">
+                  <a href="https://github.com/ewilbert7/portfolio" className="text-blue-400 hover:text-blue-300 flex items-center space-x-1">
+                    <Github className="w-4 h-4" />
+                    <span>Code</span>
+                  </a>
+                </div>
+              </div>
+              {/* Facial Emotion Detector */}
+              <div className="bg-gray-800 rounded-lg p-6 group">
                 <h3 className="text-xl font-semibold">Facial Emotion Detector</h3>
                 <p className="text-sm text-blue-400 mb-2">Inspirit AI • Best Presentation • Dec 2022</p>
                 <p className="text-gray-300 mb-4">
@@ -389,19 +403,19 @@ function App() {
                     <span>Presentation</span>
                   </a>
                 </div>
-              </div> 
+              </div>
 
-    </div>
-  </div>
-</section>
+            </div>
+          </div>
+        </section>
       </main>
       <footer className="bg-gray-900 text-gray-100 text-center py-4">
-      <p className="font-mono text-sm">
-        Built and designed by <strong>Eworitse Wilbert</strong>. Original idea credits to <strong>Gazi Jarin</strong>. All rights reserved &copy; 2025
-      </p>
-    </footer>
+        <p className="font-mono text-sm">
+          Built and designed by <strong>Eworitse Wilbert</strong>. Original idea credits to <strong>Gazi Jarin</strong>. All rights reserved &copy; 2025
+        </p>
+      </footer>
     </div>
-    
+
   );
 }
 

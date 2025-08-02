@@ -363,7 +363,7 @@ function App() {
               </div>
               <div className="bg-gray-800 rounded-lg p-6 group">
                 <h3 className="text-xl font-semibold">Chirply</h3>
-                <p className="text-sm text-blue-400 mb-2">Personal Project • July 2024</p>
+                <p className="text-sm text-blue-400 mb-2">Personal Project • May 2025</p>
                 <p className="text-gray-300 mb-4">
                   Federated Twitter-inspired platform with a custom-built HTTP server written in vanilla Java. Implements RESTful APIs, JSON parsing, and cross-server federation with loop prevention.
                 </p>

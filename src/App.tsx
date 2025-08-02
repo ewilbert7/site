@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, FileText, Menu, X } from 'lucide-react';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const sections = ['Home', 'About', 'Experience', 'Projects'];
+  const sections = ['Home', 'About', 'Experience', 'Projects', 'Awards'];
   const socialLinks = [
     { icon: <Github className="w-5 h-5" />, href: 'https://github.com/ewilbert7', label: 'GitHub' },
     { icon: <Linkedin className="w-5 h-5" />, href: 'https://www.linkedin.com/in/eworitsewarami-wilbert/', label: 'LinkedIn' },
@@ -408,6 +408,95 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Awards & Certifications Section */}
+        {/* <section id="awards" className="min-h-screen flex items-center">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h2 className="text-3xl font-bold mb-12 text-center">Awards & Certifications</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Top 150 Future Leader of Afro-Caribbean descent in the UK 25/26</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Dean's List - University of St Andrews 2024/25</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Awarded Royal Order of Iwere (ROI) title by Ogiame Atuwatse III, the Olu of Warri</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">J.P. Morgan Code for Good 2025 - Runner-Up</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Distinction - International Year One Science at University of St Andrews</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">All Distinctions (9A1s) in WASSCE 2023</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">1st Place - Jane Street WiSE Europe Estimathon 2024</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">3rd Place - Bloomberg BPuzzled 2023</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Typhoon8 Award for Computer Science</span>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Hackerrank Python (Basic) Certificate - 2023</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Hackerrank SQL (Basic) Certificate - 2024</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">JavaScript Algorithms and Data Structures - 2018</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Responsive Web Design Developer Certification</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">7.1 in TMUA 2022 (top 10%)</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Distinction in Mathematical Olympiad for Girls (48/50)</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">Gold in UKMT Senior Maths Challenge 2022 and 2023</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">NCS 2021 - Contribution to Community and Country</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">ABRSM Grade 6 Piano</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-yellow-400 text-lg mt-1">🏆</span>
+                  <span className="text-gray-300">ABRSM Grade 5 Music Theory</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> */}
       </main>
       <footer className="bg-gray-900 text-gray-100 text-center py-4">
         <p className="font-mono text-sm">

@@ -312,7 +312,7 @@ function App() {
                 <p className="text-zinc-600 dark:text-zinc-400 text-lg leading-relaxed">
                   I'm a{' '}
                   <span className="text-emerald-600 dark:text-emerald-400 font-medium">
-                    second-year Computer Science
+                    penultimate-year Computer Science
                   </span>{' '}
                   student at the University of St Andrews with a passion for building scalable, secure, and impactful software solutions.
                 </p>
